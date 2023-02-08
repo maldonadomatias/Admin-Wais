@@ -1,0 +1,70 @@
+<%- include("./partials/head")  %> 
+<style>
+  body{
+    padding: 40px 3%;
+  }
+.card {
+  background: white;
+  padding: 60px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 3px #C8D0D8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 660px;
+  margin: 0 auto;
+}
+</style>
+<body>
+  <div class="card">
+
+    <form action="new-contact" method="POST" style="width: 100%;  display: flex;
+    flex-direction: column;">
+      <div class="mb-3" style="text-align: center;">
+        <h1>Crear un usuario</h1>
+      </div>
+      <div class="mb-3">
+        <input type="name" name="name" class="form-control" id="name" placeholder="Nombre" aria-describedby="nameHelp">
+      </div>
+      <div class="mb-3">
+        <input type="email" name="email" class="form-control" id="email" placeholder="Email" aria-describedby="emailHelp">
+      </div>
+      <div class="mb-3">
+        <select class="form-select" name="role" id="role" aria-label="Default select example">
+          <option selected>Seleccione el rol de usuario</option>
+          <option value="ingeniero">Ingeniero</option>
+          <option value="vendedor">Vendedor</option>
+        </select>
+      </div>
+      <button style="margin: auto" type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<!-- <div class="col-md-6 offset-md-3">
+  <div class="card bg-dark text-light">
+    <div class="card-header">
+      <h1 class="h4 text-white">Crear Usuario</h1>
+    </div>
+    <div class="card-footer">
+      <form action="new-contact" method="POST">
+        <div class="row">
+          <div class="col">
+            <label for="firstname">Email:</label>
+            <input
+              type="text"
+              name="email"
+              placeholder="Firstname"
+              class="form-control mb-3"
+            />
+          </div>
+          <button class="btn btn-primary btn-block">
+            Add
+          </button>
+      </form>
+    </div>
+  </div>
+</div> -->
