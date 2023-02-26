@@ -16,7 +16,7 @@ const corsOptions = {
 app.use(cors(corsOptions)); // Use this after the variable declaration
 
 // Settings
-app.set("port", process.env.PORT || 5001);
+app.set("port", process.env.PORT || 5000);
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
